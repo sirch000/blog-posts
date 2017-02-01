@@ -4,7 +4,7 @@
   "description": "Thinkful Blog Posts API Challenge",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon ./src/server.js"
+    "start": "node ./src/server.js"
   },
   "dependencies": {
     "body-parser": "1.15.2",
