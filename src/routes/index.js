@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const jsonParser = bodyParser.json();
 const router = express.Router();
-const {BlogPosts} = require('../models/index');
+const {BlogPosts} = require('../models');
 //seed some data
 const createPosts = require('../seed/createPosts')();
 
@@ -53,7 +53,7 @@ router.put('/:id', jsonParser, (req, res) => {
 		author: req.body.author,
 		publishDate: (req.body.publishDate || Date.now())
 	});
-	res.status(204).json(updatedItem);
+	res.status(200).json(updatedItem);
 });
 
 module.exports = router;
