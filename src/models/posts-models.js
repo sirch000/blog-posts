@@ -1,3 +1,5 @@
+"use strict";
+
 const mongoose = require('mongoose');
 
 //schema to represent a blog post

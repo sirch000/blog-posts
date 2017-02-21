@@ -1,3 +1,5 @@
+"use strict";
+
 const express = require('express');
 
 const {PORT, DATABASE_URL} = require('../config');
